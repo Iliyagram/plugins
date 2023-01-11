@@ -62,7 +62,7 @@ class Idpay
 		curl_close($ch);
 		
 		if( isset( $result->error_message ) ) {
-			throw new \Exception("Idoay error: " . $result->error_message);
+			throw new \Exception("Idpay error: " . $result->error_message);
 		}
 		return (array) $result;
 	}
