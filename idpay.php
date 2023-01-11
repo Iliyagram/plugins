@@ -33,7 +33,7 @@ class Idpay
 	 * @param string $merchant merchant
 	 * @param boolean $sandbox sandbox
 	 */
-	public function __construct(object $bot, string $merchant, bool $sandbox = false) 
+	public function __construct(string $merchant, bool $sandbox = false) 
 	{
 		$this->merchant = $merchant;
 		$this->sandbox = $sandbox;
