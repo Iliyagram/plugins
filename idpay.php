@@ -5,11 +5,9 @@
  *
  * Hoping the appearance Promised Savior
  *
- * @author Iliya Gholami 2022 - 2023 <tg: @Iliya_Gholami>
- * @copyright Iliya Gholami 2022 - 2023 <tg: @Iliya_Gholami>
+ * @author Iliya Gholami 2023 - 2024 <tg: @Iliya_Gholami>
+ * @copyright Iliya Gholami 2023 - 2024 <tg: @Iliya_Gholami>
  */
-
-namespace IliyaGholami;
 
 class Idpay
 {
@@ -64,7 +62,7 @@ class Idpay
 		curl_close($ch);
 		
 		if( isset( $result->error_message ) ) {
-			throw new \Exception($result->error_message);
+			throw new \Exception("Idoay error: " . $result->error_message);
 		}
 		return (array) $result;
 	}
